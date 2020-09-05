@@ -3,6 +3,8 @@ package com.learn.springboot2jpahibernate.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Student {
@@ -10,13 +12,16 @@ public class Student {
 	@Id
 	@GeneratedValue
 	private Long id;
+	@NotNull
+	@Size(min=2, message="Name should have at least 2 characters")
 	private String name;
+	@NotNull
+	@Size(min=7, message="Passport should have atleast 7 characters")
 	private String passportNumber;
 	
 	public Student() {
 		super();
 	}
-	
 	
 	public Student(Long id, String name, String passportNumber) {
 		super();
