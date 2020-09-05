@@ -1,4 +1,4 @@
-package com.learn.springboot2jpaspringdatarest.model;
+package com.learn.springboot2jpahibernate.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +12,19 @@ public class Student {
 	private Long id;
 	private String name;
 	private String passportNumber;
+	
+	public Student() {
+		super();
+	}
+	
+	
+	public Student(Long id, String name, String passportNumber) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.passportNumber = passportNumber;
+	}
+
 	public Long getId() {
 		return id;
 	}

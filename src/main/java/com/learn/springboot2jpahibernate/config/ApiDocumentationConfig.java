@@ -1,4 +1,4 @@
-package com.learn.springboot2jpaspringdatarest.config;
+package com.learn.springboot2jpahibernate.config;
 
 import io.swagger.annotations.Contact;
 import io.swagger.annotations.ExternalDocs;

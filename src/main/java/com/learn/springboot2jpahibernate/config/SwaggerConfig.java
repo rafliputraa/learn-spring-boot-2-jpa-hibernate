@@ -1,4 +1,4 @@
-package com.learn.springboot2jpaspringdatarest.config;
+package com.learn.springboot2jpahibernate.config;
 
 import java.util.Arrays;
 import java.util.HashSet;
